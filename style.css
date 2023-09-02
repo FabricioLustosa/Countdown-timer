@@ -5,7 +5,10 @@
   margin: 0;
   padding: 0;
 }
-
+:root {
+  --background-elements: rgba(255, 255, 255, 0.714);
+  --box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.298);
+}
 body {
   background-image: url(imagens/damian-denis-D8R_txR_0PE-unsplash.jpg);
 
@@ -51,12 +54,13 @@ h2 {
 }
 .countdown-container {
   box-sizing: border-box;
-  width: auto;
+  width: 80%;
   height: auto;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.714);
   border-radius: 20px;
   display: flex;
+  justify-content: space-around;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.298);
 }
 span {
@@ -65,7 +69,7 @@ span {
   border-radius: 10px;
 }
 .big-text {
-  font-size: 6rem;
+  font-size: 8vw;
   line-height: 1;
   margin: 0 2rem;
   font-weight: bold;
@@ -78,8 +82,38 @@ span {
 .countdown-el span {
   font-size: 1.3em;
 }
-
-@media screen and (max-width: 750px) {
+.buttons {
+  background-color: rgba(171, 171, 171, 0.438);
+  padding: 10px;
+  border-radius: 5px;
+  /*box-shadow: var(--box-shadow);*/
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+.style-buttons {
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  transition: 0.4s ease;
+}
+.style-buttons:hover {
+  color: white;
+  font-size: 0.9em;
+}
+#easy-knowledge:hover {
+  background-color: rgb(34, 131, 34);
+}
+#medium-knowledge:hover {
+  background-color: rgb(226, 143, 26);
+}
+#hard-knowledge:hover {
+  background-color: rgb(214, 2, 2);
+}
+@media screen and (max-width: 810px) {
   h1 {
     font-size: 3em;
   }
@@ -90,16 +124,20 @@ span {
     width: 90%;
     justify-content: center;
   }
-  .big-text {
-    font-size: 5rem;
-  }
+
   .countdown-el span {
     font-size: 1em;
   }
 }
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 690px) {
   h1 {
     font-size: 2.5em;
+  }
+  .buttons {
+    margin-bottom: 30px;
+  }
+  h2 {
+    margin: 48px 0;
   }
   .countdown-container {
     width: 50%;
@@ -107,9 +145,7 @@ span {
     transition: 0.7s ease;
     justify-content: center;
   }
-  .big-text {
-    font-size: 4rem;
-  }
+
   .countdown-el span {
     font-size: 1em;
     transition: 0.2s ease;
@@ -129,7 +165,7 @@ span {
 }
 @media screen and (max-width: 500px) {
   .countdown-el span {
-    font-size: 14px;
+    font-size: 0.8em;
   }
 }
 @media screen and (max-width: 430px) {
