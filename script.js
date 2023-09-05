@@ -30,3 +30,12 @@ function formatTime(time) {
 countdown();
 
 setInterval(countdown, 1000);
+
+function textChange() {
+  const textChange = document.getElementById("CongratMessage");
+
+  textChange.innerHTML =
+    "Congratulations! Keep studying that the first job is coming.";
+
+  textChange.classList.add("custom-font-size");
+}

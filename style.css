@@ -52,6 +52,9 @@ h2 {
   font-size: 2em;
   margin: 4rem 0;
 }
+.custom-font-size {
+  font-size: 1.5em;
+} /*classe criada via javascript através de textChange.classList.add("custom-font-size"); */
 .countdown-container {
   box-sizing: border-box;
   width: 80%;
