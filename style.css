@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200,800&display=swap");
 
 * {
   box-sizing: border-box;
@@ -53,7 +53,12 @@ h2 {
   margin: 4rem 0;
 }
 .custom-font-size {
+  font-weight: 800;
   font-size: 1.5em;
+  background-color: green;
+  padding: 10px;
+  border-radius: 10px;
+  text-shadow: none;
 } /*classe criada via javascript através de textChange.classList.add("custom-font-size"); */
 .countdown-container {
   box-sizing: border-box;
@@ -116,6 +121,18 @@ span {
 #hard-knowledge:hover {
   background-color: rgb(214, 2, 2);
 }
+label {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+  color: white;
+}
+#acquired-knowledge {
+  border-radius: 30px;
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 810px) {
   h1 {
     font-size: 3em;
