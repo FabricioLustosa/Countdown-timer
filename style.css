@@ -114,6 +114,7 @@ span {
   margin-bottom: -8px;
 }
 .style-buttons {
+  font-size: 1em;
   font-weight: bold;
   border: none;
   padding: 10px;
@@ -122,6 +123,18 @@ span {
 
   transition: 0.4s ease;
 }
+#send {
+  width: 100px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 5px 30px;
+  transition: 0.7s ease;
+}
 .style-buttons:hover {
   color: white;
   font-size: 0.9em;
@@ -129,11 +142,26 @@ span {
 #easy-knowledge:hover {
   background-color: rgb(34, 131, 34);
 }
+#easy-knowledge:focus {
+  background-color: rgb(34, 131, 34);
+  color: white;
+}
 #medium-knowledge:hover {
   background-color: rgb(226, 143, 26);
 }
+#medium-knowledge:focus {
+  background-color: rgb(226, 143, 26);
+  color: white;
+}
 #hard-knowledge:hover {
   background-color: rgb(214, 2, 2);
+}
+#hard-knowledge:focus {
+  background-color: rgb(214, 2, 2);
+  color: white;
+}
+#send:hover {
+  width: 150px;
 }
 label {
   display: flex;

@@ -6,10 +6,10 @@ const secondsEl = document.getElementById("seconds");
 const firstJob = "1 Nov 2023";
 
 function countdown() {
-  const firstJobDay = new Date(firstJob);
+  const firstJobDay = new Date(firstJob); //cria um novo objeto Date e o inicializa com a data e hora contidas na string firstJob.
   const currentDate = new Date();
 
-  const totalSeconds = (firstJobDay - currentDate) / 1000; //Divide-se por mil para converter de milissegundos para segundos
+  const totalSeconds = (firstJobDay - currentDate) / 1000; //Divide-se por mil para converter de milissegundos para segundos. Diferença entre duas datas em segundos
 
   const days = Math.floor(totalSeconds / 86400); //86400: total de segundos em um dia
   const hours = Math.floor((totalSeconds % 86400) / 3600); //3600: número de segundos em uma hora
@@ -23,7 +23,16 @@ function countdown() {
 }
 
 function formatTime(time) {
-  return time < 10 ? `0${time}` : time;
+  //garantindo que valores menores que 10 tenham dois dígitos
+  return time < 10 ? `0${time}` : time; //faz uso de uma estrutura condicional ternária (maneira compacta de escrever uma instrução if-else)
+  //USANDO IF
+  // function formatTime(time) {
+  //   if (time < 10) {
+  //     return `0${time}`;
+  //   } else {
+  //     return time.toString();
+  //   }
+  // }
 }
 
 //Initial call
@@ -31,11 +40,12 @@ countdown();
 
 setInterval(countdown, 1000);
 
-function textChange() {
-  const textChange = document.getElementById("CongratMessage");
+// function textChange() {
+//   const textChange = document.getElementById("CongratMessage");
 
-  textChange.innerHTML =
-    "Congratulations! Keep studying that the first job is coming.";
+//   textChange.innerHTML =
+//     "Congratulations! Keep studying that the first job is coming.";
 
-  textChange.classList.add("custom-font-size");
-}
+//   textChange.classList.add("custom-font-size");
+// }
+// Função para manipular o clique nos botões

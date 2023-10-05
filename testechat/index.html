@@ -38,11 +38,11 @@
           id="acquired-knowledge"
           placeholder=" What did you learn today?"
       /></label>
-      <section class="buttons" onclick="textChange()">
+      <section class="buttons">
         <button
           class="style-buttons"
           id="easy-knowledge"
-          value="text"
+          data-time-to-deduct="180"
           type="button"
         >
           Easy Knowledge
@@ -50,7 +50,7 @@
         <button
           class="style-buttons"
           id="medium-knowledge"
-          value="text"
+          data-time-to-deduct="300"
           type="button"
         >
           Medium Knowledge
@@ -58,7 +58,7 @@
         <button
           class="style-buttons"
           id="hard-knowledge"
-          value="text"
+          data-time-to-deduct="600"
           type="button"
         >
           Hard Knowledge
@@ -66,5 +66,6 @@
       </section>
     </div>
     <button id="send" onclick="deductTime()">Send</button>
+    <script src="fun.js"></script>
   </body>
 </html>
